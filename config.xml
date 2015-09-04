@@ -55,6 +55,7 @@ Define a specific version of PhoneGap to build into your app.
 <gap:plugin name="org.apache.cordova.network-information" />
 <gap:plugin name="org.apache.cordova.splashscreen" />
 <gap:plugin name="org.apache.cordova.vibration" />
+<gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
 <!-- Third party plugins -->
 <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
 <!--
@@ -102,8 +103,15 @@ Otherwise, you can specify specific domains:
 -->
 <access origin="*"/>
 <access origin="whatsapp:*" launch-external="yes" />
-<!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+ <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
 <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+
+<!-- for Android (you will find one in res/xml) -->
+<!-- <feature name="SocialSharing">
+  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+</feature> -->
+
+
 <plugin name="cordova-plugin-whitelist" version="1" />
 <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
