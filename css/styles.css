@@ -122,6 +122,15 @@ ul {
     border-top: none !important;
 }
 
+
+.icon-whatsapp {
+    background: transparent url(images/whatsapp.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
 .icon-call {
     background: transparent url(images/call.svg);
     background-repeat: no-repeat;
