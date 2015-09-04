@@ -10,6 +10,7 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
+    opacity: 0.4;
 }
 
 .topcoat-icon--back {
@@ -22,6 +23,8 @@
 .topcoat-list__container {
     border-bottom: none;
     clear: both;
+    background-image: url("css/images/back.png");
+    opacity: 0.4;
 }
 
 .count {
