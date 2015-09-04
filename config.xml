@@ -63,7 +63,7 @@ Define a specific version of PhoneGap to build into your app.
 <gap:plugin name="com.phonegap.plugins.barcodescanner" />
 -->
 <!-- Define app icon for each platform. -->
-<icon src="css/images/icon1.jpeg" />
+<icon src="css/images/icon1.png" />
 <!-- <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
 <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
 <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
