@@ -23,15 +23,15 @@
             <% if (reports > 0) { %>
             <li class="topcoat-list__item"><a href="#employees/<%= id %>/reports"><p>View Direct Reports</p><p><%= reports %></p><div class="action-icon icon-reports"/></a></li>
             <% } %>
-            <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
-            
-            <button onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via WhatsApp (with errcallback)</button>
+           <!--  <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
 
+            <button onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via WhatsApp (with errcallback)</button>
+ -->
 
             <li class="topcoat-list__item"><a href="tel:<%= officePhone %>"><p>Call Office</p><p><%= officePhone %></p><div class="action-icon icon-call"></div></a></li>
             <li class="topcoat-list__item"><a href="tel:<%= cellPhone %>"><p>Call Cell</p><p><%= cellPhone %></p><div class="action-icon icon-call"></div></a></li>
-            <li class="topcoat-list__item"><a href="whatsapp://send?text=Test 1">
-               <p>WhatsApp</p><p><%= officePhone %></p><div class="action-icon icon-call"></div></a></li>
+            <li class="topcoat-list__item"><a onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
+               <p>WhatsApp</p><div class="action-icon icon-call"></div></a></li>
             <li class="topcoat-list__item"><a href="sms:<%= cellPhone %>"><p>SMS</p><p><%= cellPhone %></p><div class="action-icon icon-sms"></div></a></li>
             <li class="topcoat-list__item"><a href="mailto:<%= email %>"><p>Email</p><p><%= email %></p><div class="action-icon icon-mail"></div></a></li>
         </ul>
