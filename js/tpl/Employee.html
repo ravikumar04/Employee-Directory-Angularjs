@@ -30,7 +30,7 @@
 
             <li class="topcoat-list__item"><a href="tel:<%= officePhone %>"><p>Call Office</p><p><%= officePhone %></p><div class="action-icon icon-call"></div></a></li>
             <li class="topcoat-list__item"><a href="tel:<%= cellPhone %>"><p>Call Cell</p><p><%= cellPhone %></p><div class="action-icon icon-call"></div></a></li>
-            <li class="topcoat-list__item"><a onclick="window.plugins.socialsharing.shareViaWhatsApp('', null /* img */, null /* url */, function() {console.log('ture')}, function(errormsg){alert(errormsg)})">
+            <li class="topcoat-list__item"><a onclick="window.plugins.socialsharing.shareViaWhatsApp('hi', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
                <p>WhatsApp</p><div class="action-icon icon-whatsapp"></div></a></li>
             <li class="topcoat-list__item"><a href="sms:<%= cellPhone %>"><p>SMS</p><p><%= cellPhone %></p><div class="action-icon icon-sms"></div></a></li>
             <li class="topcoat-list__item"><a href="mailto:<%= email %>"><p>Email</p><p><%= email %></p><div class="action-icon icon-mail"></div></a></li>
